@@ -26,6 +26,12 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/tarjeta.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+      .oculto {
+        display: none !important;
+    }
+    </style>
   </head>
   
   <body class="d-flex flex-column h-100 bg-white">
@@ -50,16 +56,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
               <li class="nav-item">
-                <a class="nav-link text-gradient" href="index.html">Home</a>
+                <a class="nav-link text-gradient" href="index.html">INICIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-gradient" href="resume.html">Resume</a>
+                <a class="nav-link text-gradient" href="resume.html">RESUMEN</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-gradient" href="projects.html">Projects</a>
+                <a class="nav-link text-gradient" href="projects.html">PROYECTOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-gradient" href="contact.html">Contact</a>
+                <a class="nav-link text-gradient" href="contact.html">CONTACTO</a>
               </li>
             </ul>
           </div>
@@ -68,17 +74,17 @@
       <!-- Projects Section-->
       <section class="py-5">
         <div class="container px-5 mb-5">
-          <div class="text-center mb-5">
+          <div class="text-center mb-5" data-aos="zoom-in"  data-aos-duration="1000" >
             <h1 class="display-5 fw-bolder mb-0">
               <span class="text-gradient d-inline">PROYECTOS</span>
             </h1>
           </div>
-          <div class="text-center mb-5">
+          <div class="text-center mb-5" data-aos="zoom-in"  data-aos-duration="1000" >
             <button type="button" class="btn btn-outline-danger">TODOS</button>
-            <button type="button" class="btn btn-outline-primary">
+            <button type="button" class="btn btn-outline-primary" onclick="filtrarTarjetas('financiero')">
               FINANCIERO
             </button>
-            <button type="button" class="btn btn-outline-secondary">
+            <button type="button" class="btn btn-outline-secondary" onclick="filtrarTarjetas('deportivo')">
               DEPORTIVO
             </button>
             <button type="button" class="btn btn-outline-success">
@@ -86,17 +92,18 @@
             </button>
             <button type="button" class="btn btn-outline-danger">ESTADISTICO</button>
           </div>
-          <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="row row-cols-1 row-cols-md-3 g-4" >
             
             <!-- INICIO TARJETA DE PROYECTOS-->
             
             <!-- TARJETA N° 1-->
-            <div class="col">
+            <div class="col" data-aos="zoom-in"  data-aos-duration="1000" class="tarjeta">
               <div class="card h-100">
                 <img
                   src="IMAGENES/prueba.webp"
                   class="card-img-top"
                   alt="..."
+                  
                 />
                 <div class="card-body">
                   <h5 class="card-title text-gradient">FINANZAS</h5>
@@ -111,7 +118,7 @@
                   </p>
                   <div class="d-flex card-actions">
                     <button class="btn btn-outline-primary">DETALLE</button>
-                    <button class="btn btn-primary ms-2">FINANCIERO</button>
+                    <button class="btn btn-primary ms-2" class="categoria">FINANCIERO</button>
                   </div>
                 </div>
               </div>
@@ -119,7 +126,7 @@
             
             <!-- TARJETA N° 2-->
              
-             <div class="col">
+             <div class="col" data-aos="zoom-in"  data-aos-duration="1000" class="tarjeta">
               <div class="card h-100">
                 <img
                   src="IMAGENES/prueba.webp"
@@ -139,7 +146,7 @@
                   </p>
                   <div class="d-flex card-actions">
                     <button class="btn btn-outline-primary">DETALLE</button>
-                    <button class="btn btn-primary ms-2">FINANCIERO</button>
+                    <button class="btn btn-primary ms-2" class="categoria">FINANCIERO</button>
                   </div>
                 </div>
               </div>
@@ -147,7 +154,7 @@
             
             <!-- TARJETA N° 3-->
            
-           <div class="col">
+           <div class="col" data-aos="zoom-in"  data-aos-duration="1000" class="tarjeta">
             <div class="card h-100">
               <img
                 src="IMAGENES/prueba.webp"
@@ -167,14 +174,14 @@
                 </p>
                 <div class="d-flex card-actions">
                   <button class="btn btn-outline-primary">DETALLE</button>
-                  <button class="btn btn-primary ms-2">FINANCIERO</button>
+                  <button class="btn btn-primary ms-2" class="categoria">FINANCIERO</button>
                 </div>
               </div>
             </div>
           </div>
           
            <!-- TARJETA N° 4-->
-           <div class="col">
+           <div class="col" data-aos="zoom-in"  data-aos-duration="3000" data-aos-once="true" class="tarjeta">
             <div class="card h-100">
               <img
                 src="IMAGENES/prueba.webp"
@@ -194,14 +201,14 @@
                 </p>
                 <div class="d-flex card-actions">
                   <button class="btn btn-outline-primary">DETALLE</button>
-                  <button class="btn btn-primary ms-2">FINANCIERO</button>
+                  <button class="btn btn-primary ms-2" class="categoria">FINANCIERO</button>
                 </div>
               </div>
             </div>
           </div>
           
            <!-- TARJETA N° 5-->
-           <div class="col">
+           <div class="col" data-aos="zoom-in"  data-aos-duration="3000" data-aos-once="true" class="tarjeta">
             <div class="card h-100">
               <img
                 src="IMAGENES/prueba.webp"
@@ -221,14 +228,14 @@
                 </p>
                 <div class="d-flex card-actions">
                   <button class="btn btn-outline-primary">DETALLE</button>
-                  <button class="btn btn-primary ms-2">FINANCIERO</button>
+                  <button class="btn btn-primary ms-2" class="categoria">FINANCIERO</button>
                 </div>
               </div>
             </div>
           </div>
           
            <!-- TARJETA N° 6-->
-           <div class="col">
+           <div class="col" data-aos="zoom-in"  data-aos-duration="3000" data-aos-once="true" class="tarjeta">
             <div class="card h-100">
               <img
                 src="IMAGENES/prueba.webp"
@@ -248,14 +255,14 @@
                 </p>
                 <div class="d-flex card-actions">
                   <button class="btn btn-outline-primary">DETALLE</button>
-                  <button class="btn btn-primary ms-2">FINANCIERO</button>
+                  <button class="btn btn-primary ms-2" class="categoria">FINANCIERO</button>
                 </div>
               </div>
             </div>
           </div>
           
            <!-- TARJETA N° 7-->
-           <div class="col">
+           <div class="col" data-aos="zoom-in"  data-aos-duration="3000" data-aos-once="true" class="tarjeta">
             <div class="card h-100">
               <img
                 src="IMAGENES/prueba.webp"
@@ -275,14 +282,14 @@
                 </p>
                 <div class="d-flex card-actions">
                   <button class="btn btn-outline-primary">DETALLE</button>
-                  <button class="btn btn-primary ms-2">FINANCIERO</button>
+                  <button class="btn btn-primary ms-2" class="categoria">FINANCIERO</button>
                 </div>
               </div>
             </div>
           </div>
           
            <!-- TARJETA N° 8-->
-           <div class="col">
+           <div class="col" data-aos="zoom-in"  data-aos-duration="3000" data-aos-once="true" class="tarjeta">
             <div class="card h-100">
               <img
                 src="IMAGENES/prueba.webp"
@@ -302,14 +309,14 @@
                 </p>
                 <div class="d-flex card-actions">
                   <button class="btn btn-outline-primary">DETALLE</button>
-                  <button class="btn btn-primary ms-2">FINANCIERO</button>
+                  <button class="btn btn-primary ms-2" class="categoria">FINANCIERO</button>
                 </div>
               </div>
             </div>
           </div>
           
            <!-- TARJETA N° 9-->
-           <div class="col">
+           <div class="col" data-aos="zoom-in"  data-aos-duration="3000" data-aos-once="true" class="tarjeta">
             <div class="card h-100">
               <img
                 src="IMAGENES/prueba.webp"
@@ -329,14 +336,14 @@
                 </p>
                 <div class="d-flex card-actions">
                   <button class="btn btn-outline-primary">DETALLE</button>
-                  <button class="btn btn-primary ms-2">FINANCIERO</button>
+                  <button class="btn btn-primary ms-2" class="categoria">FINANCIERO</button>
                 </div>
               </div>
             </div>
           </div>
           
            <!-- TARJETA N° 10-->
-           <div class="col">
+           <div class="col" data-aos="zoom-in"  data-aos-duration="3000" data-aos-once="true" class="tarjeta">
             <div class="card h-100">
               <img
                 src="IMAGENES/prueba.webp"
@@ -356,7 +363,7 @@
                 </p>
                 <div class="d-flex card-actions">
                   <button class="btn btn-outline-primary">DETALLE</button>
-                  <button class="btn btn-primary ms-2">FINANCIERO</button>
+                  <button class="btn btn-primary ms-2" class="categoria">FINANCIERO</button>
                 </div>
               </div>
             </div>
@@ -423,5 +430,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- ENLACE CARPETA JAVASCRIPT-->
     <script src="js/scripts.js"></script>
+
+        <!-- JS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+    
+  </script>
+
+  <script>
+    function filtrarTarjetas(categoria) {
+        const tarjetas = document.querySelectorAll('.tarjeta');
+        tarjetas.forEach(tarjeta => {
+            if (tarjeta.classList.contains(categoria)) {
+                tarjeta.classList.remove('oculto');
+            } else {
+                tarjeta.classList.add('oculto');
+            }
+        });
+    }
+
+    function mostrarTodas() {
+        const tarjetas = document.querySelectorAll('.tarjeta');
+        tarjetas.forEach(tarjeta => {
+            tarjeta.classList.remove('oculto');
+        });
+    }
+</script>
   </body>
 </html>
