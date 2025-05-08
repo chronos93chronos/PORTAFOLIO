@@ -1,9 +1,3 @@
-.tarjeta {
-  transition: all 0.3s; /* Transición suave para todos los cambios de estilo */
-}
-
-.tarjeta:hover {
-  transform: scale(
-    1.05
-  ); /* Aumenta el tamaño de la tarjeta al pasar el mouse */
+.background-image-div {
+background-color: aquamarine;
 }
