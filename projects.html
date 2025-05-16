@@ -72,315 +72,237 @@
         </div>
       </nav>
       <!-- Projects Section-->
-      <section class="py-5">
-        <div class="container px-5 mb-5">
-          <div class="text-center mb-5" data-aos="zoom-in"  data-aos-duration="1000" >
-            <h1 class="display-5 fw-bolder mb-0">
-              <span class="text-gradient d-inline">PROYECTOS</span>
-            </h1>
-          </div>
-          <div class="text-center mb-5" data-aos="zoom-in"  data-aos-duration="1000" >
-            <button type="button" class="btn btn-outline-danger">TODOS</button>
-            <button type="button" class="btn btn-outline-primary" onclick="filtrarTarjetas('financiero')">
-              FINANCIERO
-            </button>
-            <button type="button" class="btn btn-outline-secondary" onclick="filtrarTarjetas('deportivo')">
-              DEPORTIVO
-            </button>
-            <button type="button" class="btn btn-outline-success">
-              ADMINISTRACION
-            </button>
-            <button type="button" class="btn btn-outline-danger">ESTADISTICO</button>
-          </div>
-          <div class="row row-cols-1 row-cols-md-3 g-4" >
-            
-            <!-- INICIO TARJETA DE PROYECTOS-->
-            
-            <!-- TARJETA N° 1-->
-            <div class="col" data-aos="zoom-in"  data-aos-duration="1000" class="tarjeta">
-              <div class="card h-100">
-                <img
-                  src="IMAGENES/prueba.webp"
-                  class="card-img-top"
-                  alt="..."
-                  
-                />
-                <div class="card-body">
-                  <h5 class="card-title text-gradient">FINANZAS</h5>
-                  <p class="text-align-justify card-text ">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.his is a longer card with supporting text
-                    below as a natural lead-in to additional content. This
-                    content is a little bit longer. This is a longer card with
-                    supporting text below as a natural lead-in to additional
-                   
-                  </p>
-                  <div class="d-flex card-actions">
-                    <a
-                    class="btn btn-outline-primary" 
-                    href="PROYECTOS/proyecto_1.html"
-                    >DETALLE</a
-                  >
-                  <a
-                  class="btn btn-primary ms-2" 
-                  href="#"
-                  >FINANCIERO</a
-                >
-                  </div>
-                </div>
-              </div>
+     <section class="py-5">
+  <div class="container px-5 mb-5">
+    <div class="text-center mb-5" data-aos="zoom-in" data-aos-duration="1000">
+      <h1 class="display-5 fw-bolder mb-0">
+        <span class="text-gradient d-inline">PROYECTOS</span>
+      </h1>
+    </div>
+    <div class="text-center mb-5" data-aos="zoom-in" data-aos-duration="1000">
+      <button type="button" class="btn btn-outline-danger filtro-btn active" data-categoria="todos" id="btn-todos">TODOS</button>
+      <button type="button" class="btn btn-outline-primary filtro-btn" data-categoria="financiero">
+        FINANCIERO
+      </button>
+      <button type="button" class="btn btn-outline-secondary filtro-btn" data-categoria="deportivo">
+        DEPORTIVO
+      </button>
+      <button type="button" class="btn btn-outline-success filtro-btn" data-categoria="administracion">
+        ADMINISTRACION
+      </button>
+      <button type="button" class="btn btn-outline-danger filtro-btn" data-categoria="estadistico">
+        ESTADISTICO
+      </button>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="contenedor-tarjetas">
+
+      <div class="col tarjeta-proyecto" data-aos="zoom-in" data-aos-duration="1000" data-categoria="financiero">
+        <div class="card h-100">
+          <img src="IMAGENES/prueba.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-gradient">FINANZAS</h5>
+            <p class="text-align-justify card-text ">
+              This is a longer card with supporting text below as a
+              natural lead-in to additional content. This content is a
+              little bit longer.his is a longer card with supporting text
+              below as a natural lead-in to additional content. This
+              content is a little bit longer. This is a longer card with
+              supporting text below as a natural lead-in to additional
+            </p>
+            <div class="d-flex card-actions">
+              <a class="btn btn-outline-primary" href="PROYECTOS/proyecto_1.html">DETALLE</a>
+              <a class="btn btn-primary ms-2 categoria-tag" href="#">FINANCIERO</a>
             </div>
-            
-            <!-- TARJETA N° 2-->
-             
-             <div class="col" data-aos="zoom-in"  data-aos-duration="1000" class="tarjeta">
-              <div class="card h-100">
-                <img
-                  src="IMAGENES/prueba.webp"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">FINANZAS</h5>
-                  <p class="text-align-justify card-text ">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.his is a longer card with supporting text
-                    below as a natural lead-in to additional content. This
-                    content is a little bit longer. This is a longer card with
-                    supporting text below as a natural lead-in to additional
-                   
-                  </p>
-                  <div class="d-flex card-actions">
-                    <button class="btn btn-outline-primary">DETALLE</button>
-                    <button class="btn btn-primary ms-2" class="categoria">FINANCIERO</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- TARJETA N° 3-->
-           
-           <div class="col" data-aos="zoom-in"  data-aos-duration="1000" class="tarjeta">
-            <div class="card h-100">
-              <img
-                src="IMAGENES/prueba.webp"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">FINANZAS</h5>
-                <p class="text-align-justify card-text ">
-                  This is a longer card with supporting text below as a
-                  natural lead-in to additional content. This content is a
-                  little bit longer.his is a longer card with supporting text
-                  below as a natural lead-in to additional content. This
-                  content is a little bit longer. This is a longer card with
-                  supporting text below as a natural lead-in to additional
-                 
-                </p>
-                <div class="d-flex card-actions">
-                  <button class="btn btn-outline-primary">DETALLE</button>
-                  <button class="btn btn-primary ms-2" class="categoria">FINANCIERO</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-           <!-- TARJETA N° 4-->
-           <div class="col" data-aos="zoom-in"  data-aos-duration="3000" data-aos-once="true" class="tarjeta">
-            <div class="card h-100">
-              <img
-                src="IMAGENES/prueba.webp"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">FINANZAS</h5>
-                <p class="text-align-justify card-text ">
-                  This is a longer card with supporting text below as a
-                  natural lead-in to additional content. This content is a
-                  little bit longer.his is a longer card with supporting text
-                  below as a natural lead-in to additional content. This
-                  content is a little bit longer. This is a longer card with
-                  supporting text below as a natural lead-in to additional
-                 
-                </p>
-                <div class="d-flex card-actions">
-                  <button class="btn btn-outline-primary">DETALLE</button>
-                  <button class="btn btn-primary ms-2" class="categoria">FINANCIERO</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-           <!-- TARJETA N° 5-->
-           <div class="col" data-aos="zoom-in"  data-aos-duration="3000" data-aos-once="true" class="tarjeta">
-            <div class="card h-100">
-              <img
-                src="IMAGENES/prueba.webp"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">FINANZAS</h5>
-                <p class="text-align-justify card-text ">
-                  This is a longer card with supporting text below as a
-                  natural lead-in to additional content. This content is a
-                  little bit longer.his is a longer card with supporting text
-                  below as a natural lead-in to additional content. This
-                  content is a little bit longer. This is a longer card with
-                  supporting text below as a natural lead-in to additional
-                 
-                </p>
-                <div class="d-flex card-actions">
-                  <button class="btn btn-outline-primary">DETALLE</button>
-                  <button class="btn btn-primary ms-2" class="categoria">FINANCIERO</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-           <!-- TARJETA N° 6-->
-           <div class="col" data-aos="zoom-in"  data-aos-duration="3000" data-aos-once="true" class="tarjeta">
-            <div class="card h-100">
-              <img
-                src="IMAGENES/prueba.webp"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">FINANZAS</h5>
-                <p class="text-align-justify card-text ">
-                  This is a longer card with supporting text below as a
-                  natural lead-in to additional content. This content is a
-                  little bit longer.his is a longer card with supporting text
-                  below as a natural lead-in to additional content. This
-                  content is a little bit longer. This is a longer card with
-                  supporting text below as a natural lead-in to additional
-                 
-                </p>
-                <div class="d-flex card-actions">
-                  <button class="btn btn-outline-primary">DETALLE</button>
-                  <button class="btn btn-primary ms-2" class="categoria">FINANCIERO</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-           <!-- TARJETA N° 7-->
-           <div class="col" data-aos="zoom-in"  data-aos-duration="3000" data-aos-once="true" class="tarjeta">
-            <div class="card h-100">
-              <img
-                src="IMAGENES/prueba.webp"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">FINANZAS</h5>
-                <p class="text-align-justify card-text ">
-                  This is a longer card with supporting text below as a
-                  natural lead-in to additional content. This content is a
-                  little bit longer.his is a longer card with supporting text
-                  below as a natural lead-in to additional content. This
-                  content is a little bit longer. This is a longer card with
-                  supporting text below as a natural lead-in to additional
-                 
-                </p>
-                <div class="d-flex card-actions">
-                  <button class="btn btn-outline-primary">DETALLE</button>
-                  <button class="btn btn-primary ms-2" class="categoria">FINANCIERO</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-           <!-- TARJETA N° 8-->
-           <div class="col" data-aos="zoom-in"  data-aos-duration="3000" data-aos-once="true" class="tarjeta">
-            <div class="card h-100">
-              <img
-                src="IMAGENES/prueba.webp"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">FINANZAS</h5>
-                <p class="text-align-justify card-text ">
-                  This is a longer card with supporting text below as a
-                  natural lead-in to additional content. This content is a
-                  little bit longer.his is a longer card with supporting text
-                  below as a natural lead-in to additional content. This
-                  content is a little bit longer. This is a longer card with
-                  supporting text below as a natural lead-in to additional
-                 
-                </p>
-                <div class="d-flex card-actions">
-                  <button class="btn btn-outline-primary">DETALLE</button>
-                  <button class="btn btn-primary ms-2" class="categoria">FINANCIERO</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-           <!-- TARJETA N° 9-->
-           <div class="col" data-aos="zoom-in"  data-aos-duration="3000" data-aos-once="true" class="tarjeta">
-            <div class="card h-100">
-              <img
-                src="IMAGENES/prueba.webp"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">FINANZAS</h5>
-                <p class="text-align-justify card-text ">
-                  This is a longer card with supporting text below as a
-                  natural lead-in to additional content. This content is a
-                  little bit longer.his is a longer card with supporting text
-                  below as a natural lead-in to additional content. This
-                  content is a little bit longer. This is a longer card with
-                  supporting text below as a natural lead-in to additional
-                 
-                </p>
-                <div class="d-flex card-actions">
-                  <button class="btn btn-outline-primary">DETALLE</button>
-                  <button class="btn btn-primary ms-2" class="categoria">FINANCIERO</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-           <!-- TARJETA N° 10-->
-           <div class="col" data-aos="zoom-in"  data-aos-duration="3000" data-aos-once="true" class="tarjeta">
-            <div class="card h-100">
-              <img
-                src="IMAGENES/prueba.webp"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">FINANZAS</h5>
-                <p class="text-align-justify card-text ">
-                  This is a longer card with supporting text below as a
-                  natural lead-in to additional content. This content is a
-                  little bit longer.his is a longer card with supporting text
-                  below as a natural lead-in to additional content. This
-                  content is a little bit longer. This is a longer card with
-                  supporting text below as a natural lead-in to additional
-                 
-                </p>
-                <div class="d-flex card-actions">
-                  <button class="btn btn-outline-primary">DETALLE</button>
-                  <button class="btn btn-primary ms-2" class="categoria">FINANCIERO</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- FIN TARJETAS DE PROYECTOS-->
           </div>
         </div>
-      </section>
+      </div>
+
+      <div class="col tarjeta-proyecto" data-aos="zoom-in" data-aos-duration="1000" data-categoria="financiero">
+        <div class="card h-100">
+          <img src="IMAGENES/prueba.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">FINANZAS</h5>
+            <p class="text-align-justify card-text ">
+              This is a longer card with supporting text below as a
+              natural lead-in to additional content. This content is a
+              little bit longer.his is a longer card with supporting text
+              below as a natural lead-in to additional content. This
+              content is a little bit longer. This is a longer card with
+              supporting text below as a natural lead-in to additional
+            </p>
+            <div class="d-flex card-actions">
+              <button class="btn btn-outline-primary">DETALLE</button>
+              <button class="btn btn-primary ms-2 categoria-tag">FINANCIERO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col tarjeta-proyecto" data-aos="zoom-in" data-aos-duration="1000" data-categoria="deportivo">
+        <div class="card h-100">
+          <img src="IMAGENES/prueba.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">DEPORTIVO</h5>
+            <p class="text-align-justify card-text ">
+              This is a longer card with supporting text below as a
+              natural lead-in to additional content. This content is a
+              little bit longer.his is a longer card with supporting text
+              below as a natural lead-in to additional content. This
+              content is a little bit longer. This is a longer card with
+              supporting text below as a natural lead-in to additional
+            </p>
+            <div class="d-flex card-actions">
+              <button class="btn btn-outline-primary">DETALLE</button>
+              <button class="btn btn-primary ms-2 categoria-tag">DEPORTIVO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col tarjeta-proyecto" data-aos="zoom-in" data-aos-duration="3000" data-aos-once="true" data-categoria="administracion">
+        <div class="card h-100">
+          <img src="IMAGENES/prueba.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ADMINISTRACION</h5>
+            <p class="text-align-justify card-text ">
+              This is a longer card with supporting text below as a
+              natural lead-in to additional content. This content is a
+              little bit longer.his is a longer card with supporting text
+              below as a natural lead-in to additional content. This
+              content is a little bit longer. This is a longer card with
+              supporting text below as a natural lead-in to additional
+            </p>
+            <div class="d-flex card-actions">
+              <button class="btn btn-outline-primary">DETALLE</button>
+              <button class="btn btn-primary ms-2 categoria-tag">ADMINISTRACION</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col tarjeta-proyecto" data-aos="zoom-in" data-aos-duration="3000" data-aos-once="true" data-categoria="estadistico">
+        <div class="card h-100">
+          <img src="IMAGENES/prueba.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ESTADISTICO</h5>
+            <p class="text-align-justify card-text ">
+              This is a longer card with supporting text below as a
+              natural lead-in to additional content. This content is a
+              little bit longer.his is a longer card with supporting text
+              below as a natural lead-in to additional content. This
+              content is a little bit longer. This is a longer card with
+              supporting text below as a natural lead-in to additional
+            </p>
+            <div class="d-flex card-actions">
+              <button class="btn btn-outline-primary">DETALLE</button>
+              <button class="btn btn-primary ms-2 categoria-tag">ESTADISTICO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col tarjeta-proyecto" data-aos="zoom-in" data-aos-duration="3000" data-aos-once="true" data-categoria="financiero">
+        <div class="card h-100">
+          <img src="IMAGENES/prueba.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">FINANZAS</h5>
+            <p class="text-align-justify card-text ">
+              This is a longer card with supporting text below as a
+              natural lead-in to additional content. This content is a
+              little bit longer.his is a longer card with supporting text
+              below as a natural lead-in to additional content. This
+              content is a little bit longer. This is a longer card with
+              supporting text below as a natural lead-in to additional
+            </p>
+            <div class="d-flex card-actions">
+              <button class="btn btn-outline-primary">DETALLE</button>
+              <button class="btn btn-primary ms-2 categoria-tag">FINANCIERO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col tarjeta-proyecto" data-aos="zoom-in" data-aos-duration="3000" data-aos-once="true" data-categoria="deportivo">
+        <div class="card h-100">
+          <img src="IMAGENES/prueba.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">DEPORTIVO</h5>
+            <p class="text-align-justify card-text ">
+              This is a longer card with supporting text below as a
+              natural lead-in to additional content. This content is a
+              little bit longer.his is a longer card with supporting text
+              below as a natural lead-in to additional content. This
+              content is a little bit longer. This is a longer card with
+              supporting text below as a natural lead-in to additional
+            </p>
+            <div class="d-flex card-actions">
+              <button class="btn btn-outline-primary">DETALLE</button>
+              <button class="btn btn-primary ms-2 categoria-tag">DEPORTIVO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col tarjeta-proyecto" data-aos="zoom-in" data-aos-duration="3000" data-aos-once="true" data-categoria="administracion">
+        <div class="card h-100">
+          <img src="IMAGENES/prueba.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ADMINISTRACION</h5>
+            <p class="text-align-justify card-text ">
+              This is a longer card with supporting text below as a
+              natural lead-in to additional content. This content is a
+              little bit longer.his is a longer card with supporting text
+              below as a natural lead-in to additional content. This
+              content is a little bit longer. This is a longer card with
+              supporting text below as a natural lead-in to additional
+            </p>
+            <div class="d-flex card-actions">
+              <button class="btn btn-outline-primary">DETALLE</button>
+              <button class="btn btn-primary ms-2 categoria-tag">ADMINISTRACION</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col tarjeta-proyecto" data-aos="zoom-in" data-aos-duration="3000" data-aos-once="true" data-categoria="estadistico">
+        <div class="card h-100">
+          <img src="IMAGENES/prueba.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ESTADISTICO</h5>
+            <p class="text-align-justify card-text ">
+              This is a longer card with supporting text below as a
+              natural lead-in to additional content. This content is a
+              little bit longer.his is a longer card with supporting text
+              below as a natural lead-in to additional content. This
+              content is a little bit longer. This is a longer card with
+              supporting text below as a natural lead-in to additional
+            </p>
+            <div class="d-flex card-actions">
+              <button class="btn btn-outline-primary">DETALLE</button>
+              <button class="btn btn-primary ms-2 categoria-tag">ESTADISTICO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col tarjeta-proyecto" data-aos="zoom-in" data-aos-duration="3000" data-aos-once="true" data-categoria="todos">
+        <div class="card h-100">
+          <img src="IMAGENES/prueba.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">OTRO</h5>
+            <p class="text-align-justify card-text ">
+              This is a longer card with supporting text below as a
+              natural lead-in to additional content. This content is a
+              little bit longer.his is a longer card with supporting text
+              below as a natural lead-in to additional content. This
+              content is a little bit longer. This is a longer card with
+              supporting text below as a natural lead-in to additional
+            </p>
+            <div class="d-flex card-actions">
+              <button class="btn btn-outline-primary">DETALLE</button>
+              <button class="btn btn-primary ms-2 categoria-tag">TODOS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+  </div>
+</section>
       
       
       
@@ -446,24 +368,37 @@
     
   </script>
 
-  <script>
-    function filtrarTarjetas(categoria) {
-        const tarjetas = document.querySelectorAll('.tarjeta');
-        tarjetas.forEach(tarjeta => {
-            if (tarjeta.classList.contains(categoria)) {
-                tarjeta.classList.remove('oculto');
-            } else {
-                tarjeta.classList.add('oculto');
-            }
-        });
-    }
+ <script>
+  const botonesFiltro = document.querySelectorAll('.filtro-btn');
+  const tarjetasProyecto = document.querySelectorAll('.tarjeta-proyecto');
 
-    function mostrarTodas() {
-        const tarjetas = document.querySelectorAll('.tarjeta');
-        tarjetas.forEach(tarjeta => {
-            tarjeta.classList.remove('oculto');
-        });
-    }
+  botonesFiltro.forEach(boton => {
+    boton.addEventListener('click', function() {
+      const categoriaSeleccionada = this.dataset.categoria;
+
+      // Desactivar el botón activo previamente
+      botonesFiltro.forEach(btn => btn.classList.remove('active'));
+
+      // Activar el botón actual
+      this.classList.add('active');
+
+      tarjetasProyecto.forEach(tarjeta => {
+        const categoriaTarjeta = tarjeta.dataset.categoria;
+        if (categoriaSeleccionada === 'todos' || categoriaSeleccionada === categoriaTarjeta) {
+          tarjeta.style.display = 'block'; // O 'grid', 'flex' dependiendo de tu layout
+        } else {
+          tarjeta.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Mostrar todas las tarjetas al cargar la página
+  document.addEventListener('DOMContentLoaded', () => {
+    tarjetasProyecto.forEach(tarjeta => {
+      tarjeta.style.display = 'block'; // Asegura que todas las tarjetas se muestren al inicio
+    });
+  });
 </script>
   </body>
 </html>
