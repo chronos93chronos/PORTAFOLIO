@@ -12,14 +12,14 @@
     background: white;
     white-space: nowrap;
     position: relative;
-    margin-top: calc(50vh - 50px);
+  
 }
 
 .logos-slide {
     animation: 30s slide infinite linear;
     img {
-        height: 50px;
-        margin: 0px 70px
+        height: 80px;
+        margin: 0px 30px
     }
 }
 
